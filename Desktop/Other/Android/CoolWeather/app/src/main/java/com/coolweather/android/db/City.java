@@ -1,11 +1,10 @@
 package com.coolweather.android.db;
 
+import org.litepal.crud.LitePalSupport;
 import org.litepal.exceptions.DataSupportException;
 
-public class City extends DataSupportException {
-    public City(String errorMessage) {
-        super(errorMessage);
-    }
+public class City extends LitePalSupport {
+
 
 
     private int id;

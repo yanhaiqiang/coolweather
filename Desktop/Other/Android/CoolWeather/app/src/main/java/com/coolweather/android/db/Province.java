@@ -1,16 +1,19 @@
 package com.coolweather.android.db;
 
+import org.litepal.crud.LitePalSupport;
 import org.litepal.exceptions.DataSupportException;
 
-public class Province extends DataSupportException {
+public class Province extends LitePalSupport {
 
-    public Province(String errorMessage) {
-        super(errorMessage);
-    }
+
 
     private int id;
     private String privinceName;
     private int provinceCode;
+
+
+
+
 
     public int getId() {
         return id;
